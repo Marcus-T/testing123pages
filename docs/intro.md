@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Tutorial Intro
 
+**Hello from Marcus**
+
 Let's discover **Docusaurus in less than 5 minutes**.
 
 ## Getting Started
