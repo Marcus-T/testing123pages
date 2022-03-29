@@ -1,0 +1,215 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #7f35b2;
+  --ifm-color-primary-dark: #591368;
+  --ifm-color-primary-darker: #390b43;
+  --ifm-color-primary-darkest: #390b43;
+  --ifm-color-primary-light: #6e1e80;
+  --ifm-color-primary-lighter: #712881;
+  --ifm-color-primary-lightest: #7c4a88;
+  --ifm-code-font-size: 95%;
+
+  --ifm-color-wtw-blue: #00749b;
+  --ifm-color-wtw-blue-transparent: #00749b19;
+  --ifm-color-wtw-green: #00865c;
+  --ifm-color-wtw-green-transparent: #00865c19;
+  --ifm-color-wtw-magenta: #c111a0;
+  --ifm-color-wtw-magenta-transparent: #c111a019;
+  --ifm-color-wtw-yellow: #ffb900;
+  --ifm-color-wtw-yellow-transparent: #ffb90019;
+
+  --ifm-color-admonition-danger: var(--ifm-color-primary);
+  --ifm-color-admonition-danger-background: #71198419;
+  --ifm-color-admonition-warning: #e74c3c;
+  --ifm-color-admonition-warning-background: #e74c3c19;
+  --ifm-color-admonition-caution: #e67e22;
+  --ifm-color-admonition-caution-background: #e67e2219;
+  --ifm-color-admonition-important: var(--ifm-color-wtw-blue);
+  --ifm-color-admonition-important-background: var(--ifm-color-wtw-blue-transparent);
+  --ifm-color-admonition-info: var(--ifm-color-wtw-magenta);
+  --ifm-color-admonition-info-background: var(--ifm-color-wtw-magenta-transparent);
+  --ifm-color-admonition-note: var(--ifm-color-wtw-yellow);
+  --ifm-color-admonition-note-background: var(--ifm-color-wtw-yellow-transparent);
+  --ifm-color-admonition-tip: var(--ifm-color-wtw-green);
+  --ifm-color-admonition-tip-background: var(--ifm-color-wtw-green-transparent);
+  
+}
+
+/* Applies Willis Towers Watson branding to tables. */
+table tr:nth-child(2n) {
+  background-color: var(--ifm-color-primary-background);
+}
+
+table th {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Formatting for hyperlinks in table headers */
+table th a {
+  color: white;
+  text-decoration: underline;
+}
+
+table th a:hover { color: var(--ifm-color-wtw-blue); }
+
+table th a:visited { color: white; }
+
+.menu__link {
+  font-size: 1.0em;
+}
+.menu__list .menu__list {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.menu__list .menu__list .menu__list-item {
+  margin: 0;
+}
+
+.menu__list .menu__list .menu__list-item .menu__link {
+  border-left: 1px solid transparent;
+}
+
+.menu__list .menu__list .menu__list-item .menu__link:hover,
+.menu__list .menu__list .menu__list-item .menu__link--active {
+  border-left: 1px solid var(--ifm-color-primary);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.menu__list .menu__list .menu__list-item .menu__link {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.menu__list .menu__list .menu__list-item .menu__link--active {
+  font-weight: bold;
+  color: var(--ifm-color-wtw-magenta);
+}
+
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(11, 70, 230);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.alert {
+  background-color: var(--ifm-background-surface-color);
+  border-color: var(--ifm-alert-border-color);
+  color: var(--ifm-font-color-base);
+}
+
+.alert a {
+  color: var(--ifm-color-primary);
+  text-decoration: var(--ifm-link-decoration);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.admonition {
+  border: none;
+  border-radius: 0;
+  border-left-width: 0.3rem;
+  color: black;
+}
+
+.admonition-danger {
+  background-color: var(--ifm-color-admonition-danger-background);
+  border-left: 8px solid var(--ifm-color-admonition-danger);
+}
+.admonition-danger h5 {
+  color: var(--ifm-color-admonition-danger);
+}
+.admonition-danger .admonition-icon svg {
+  fill: var(--ifm-color-admonition-danger);
+}
+
+.admonition-warning {
+  background-color: var(--ifm-color-admonition-warning-background);
+  border-left: 8px solid var(--ifm-color-admonition-warning);
+}
+.admonition-warning h5 {
+  color: var(--ifm-color-admonition-warning);
+}
+.admonition-warning .admonition-icon svg {
+  fill: var(--ifm-color-admonition-warning);
+}
+
+.admonition-tip {
+  background-color: var(--ifm-color-admonition-tip-background);
+  border-left: 8px solid var(--ifm-color-admonition-tip);
+}
+.admonition-tip h5 {
+  color: var(--ifm-color-admonition-tip);
+}
+.admonition-tip .admonition-icon svg {
+  fill: var(--ifm-color-admonition-tip);
+}
+
+.admonition-caution {
+  background-color: var(--ifm-color-admonition-caution-background);
+  border-left: 8px solid var(--ifm-color-admonition-caution);
+}
+.admonition-caution h5 {
+  color: var(--ifm-color-admonition-caution);
+}
+.admonition-caution .admonition-icon svg {
+  fill: var(--ifm-color-admonition-caution);
+}
+
+.admonition-important {
+  border-left: 8px solid var(--ifm-color-admonition-important);
+  background-color: var(--ifm-color-admonition-important-background);
+}
+.admonition-important h5 {
+  color: var(--ifm-color-admonition-important);
+}
+.admonition-important .admonition-icon svg {
+  fill: var(--ifm-color-admonition-important);
+}
+
+.admonition-note {
+  border-left: 8px solid var(--ifm-color-admonition-note);
+  background-color: var(--ifm-color-admonition-note-background);
+}
+.admonition-note h5 {
+  color: var(--ifm-color-admonition-note);
+}
+.admonition-note .admonition-icon svg {
+  fill:var(--ifm-color-admonition-note);
+}
+
+.admonition-info {
+  border-left: 8px solid var(--ifm-color-admonition-info);
+  background-color: var(--ifm-color-admonition-info-background);
+}
+.admonition-info h5 {
+  color: var(--ifm-color-admonition-info);
+}
+.admonition-info .admonition-icon svg {
+  fill:var(--ifm-color-admonition-info);
+}
+
+/*
+Added by an 2021-08-03 to scale down font size in h3 (###) markdown.
+
+h3 is the lowest markdown heading that also creates a right sidebar table of contents entry for the item. But the variable --ifm-h3-font-size ends up being 20px, which is too large and makes the elements unappealing.
+
+Set the override to a pleasing percentage and MAKE SURE to wrap the h3 (###) header text with <div class="h3-smaller-text" markdown="1"> </div> tags. Note the markdown="1". Without this, markdown doesn't recognize the div tag.
+
+*/ 
+.h3-smaller-text {
+--ifm-h3-font-size: 95% ;
+}
